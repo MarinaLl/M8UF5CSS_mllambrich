@@ -1,0 +1,134 @@
+html, body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* -- MONDRIAN 1 -- */
+.container-1{
+    width: 400px;
+    height: 280px;
+}
+.left-side{
+    display: inline-block;
+}
+.right-side{
+    float: right;
+}
+.box-200{
+    width: 200px;
+    height: 70px;
+}
+/*caixes 100x70*/
+.box-100{
+    width: 100px;
+    height: 70px;
+}
+.especial-column{
+    display: inline-block;
+}
+.three-box-row{
+    float: right;
+}
+/*caixa different 140px*/
+#diff-box{
+    width: 100px;
+    height: 140px;
+}
+.column-2{
+    display: inline-block;
+}
+.box-column-2{
+    float: right;
+}
+/* -- COLORS -- */
+.color-yell{
+    background-color: yellow;
+}
+.color-red{
+    background-color: red;
+}
+.color-white{
+    background-color: white;
+}
+.color-blue{
+    background-color: blue;
+}
+/* -- MONDRIAN 2 -- */
+
+/*contenedor negro*/
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    margin: 0;
+}
+.column{
+    display: inline-block;
+    margin: 0px 1px;
+}
+.inside-column-4{
+    display: inline-block;
+}
+.six-box{
+    display: inline-block;
+}
+
+/* -- BOX SIZES -- */
+
+/*little boxes*/
+.min-box{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+}
+/*mid-size boxes*/
+.midd-size-box{
+    width: 80px;
+    height: 85px;
+    margin-top: 5px;
+}
+/*big boxes*/
+.box-400{
+    width: 160px;
+    height: 400px;
+}
+/*square boxes*/
+.square{
+    width: 164px;
+    height: 130px;
+    margin-bottom: 5px;
+}
+.square2{
+    width: 164px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+/*column 2 box*/
+#full-col-box{
+    width: 150px;
+    height: 420px;
+    background-color: yellow;
+}
+/*high boxes*/
+.box-400{
+    width: 164px;
+    height: 285px;
+}
+/*special column 1 box*/
+#second-col-box{
+    width: 80px;
+    height: 240px;
+    margin-top: 5px;
+}
+.dual-box{
+    width: 80px;
+    height: 130px;
+    display: inline-block;
+}
+/*imatge per comparar*/
+#img-compara{
+    margin-top: 20px;
+}

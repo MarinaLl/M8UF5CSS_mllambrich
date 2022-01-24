@@ -1,0 +1,36 @@
+.content{
+    display: flex;
+    justify-content: center;
+}
+.box2{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    border: 1px solid green;
+    text-align: center;
+    padding-top: 5px;
+}
+.box-content{
+    height: 50px;
+    margin: auto 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.solid{
+    border: 5px solid;
+}
+.dash{
+    border: 2px dashed;
+}
+.color-green{
+    border-color: green;
+}
+.color-red{
+    border-color: red;
+}
+.color-blue{
+    border-color: blue;
+}

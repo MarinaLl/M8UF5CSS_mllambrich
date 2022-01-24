@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Horari amb GRID</title>
+    </head>
+    <body>
+        <div id="container">
+            <table border="2" style="margin: 20px;" bordercolor="black">
+                <tr bgcolor="yellow">
+                    <th>Hora</th>
+                    <th>Dilluns</th>
+                    <th>Dimarts</th>
+                    <th>Dimecres</th>
+                    <th>Dijous</th>
+                    <th>Divendres</th>
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">15.30-16.25</th>
+                    <td rowspan="3"><a href="https://ca.wikipedia.org/wiki/Servei_de_xarxa" target="_blank" title="M07: Serveis en Xarxa"><img src="img/m07.jpg" alt="M07"></a></td>
+                    <td rowspan="2"><a href="https://ca.wikipedia.org/wiki/Seguretat_inform%C3%A0tica" target="_blank" title="M06: Seguretat Informàtica" ><img src="img/M06.png" alt="M06"></a></td>
+                    <td></td>
+                    <td rowspan="3"><a href="https://ca.wikipedia.org/wiki/Servei_de_xarxa" target="_blank" title="M07: Serveis en Xarxa"><img src="img/m07.jpg" alt="M07"></a></td>
+                    <td rowspan="2"><a href="https://en.wikipedia.org/wiki/English_language" target="_blank" title="Anglès Tècnic"><img src="img/M11.jpeg" alt="M11"></a></td>
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">16.25-17.20</th>
+                    <td rowspan="2"><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">17.20-18.15</th>
+                    <td><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                    <td><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td colspan="6" style="text-align: center;">Pati pm</td>
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">18.40-19.35</th>
+                    <td rowspan="3"><a href="https://ca.wikipedia.org/wiki/Seguretat_inform%C3%A0tica" target="_blank" title="M06: Seguretat Informàtica" ><img src="img/M06.png" alt="M06"></a></td>
+                    <td><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                    <td><a href="https://ca.wiktionary.org/wiki/tutoria" target="_blank" title="Tutoria"><img src="img/tut.webp" alt="M12: Tutoria"></a></td>
+                    <td rowspan="2"><a href="https://www.kapitalinteligente.es/que-es-fol/" target="_blank" title="FOL"><img src="img/fol.webp" alt="M10: Formació Laboral"></a></td>
+                    <td><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">19.35-20.30</th>
+                    <td></td>
+                    <td><a href="https://en.wikipedia.org/wiki/English_language" target="_blank" title="Anglès Tècnic"><img src="img/M11.jpeg" alt="M11"></a></td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <th bgcolor="yellow">20.30-21.25</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://es.wikipedia.org/wiki/Aplicación_web" target="_blank" title="M08: Aplicacions Web"><img src="img/M08.jpg" alt="M08"></a></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        
+            <div class="grid">
+                <div class="setmana">Hora</div>
+                <div class="setmana">Dilluns</div>
+                <div class="setmana">Dimarts</div>
+                <div class="setmana">Dimecres</div>
+                <div class="setmana">Dijous</div>
+                <div class="setmana">Divendres</div>
+                <!---->
+                <div class="hores">15:30h-16:25h</div>
+                <div class="m07" onclick="window.open('https://ca.wikipedia.org/wiki/Servei_de_xarxa', '_blank')"></div>
+                <div class="m06" onclick="window.open('https://ca.wikipedia.org/wiki/Seguretat_inform%C3%A0tica', '_blank')"></div>
+                <div class="void">lliure</div>
+                <div class="m07" onclick="window.open('https://ca.wikipedia.org/wiki/Servei_de_xarxa', '_blank')"></div>
+                <div class="m11" onclick="window.open('https://en.wikipedia.org/wiki/English_language', '_blank')"></div>
+                <!---->
+                <div class="hores">16:25h-17:20h</div>
+                <div class="m08" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')"></div>
+                <div class="hores">17:20h-18:15h</div>
+                <div class="m08v2" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')"></div>
+                <div class="m08v2" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')"></div>
+                <!---->
+                <div class="pati">Pati pm</div>
+                <!---->
+                <div class="hores">18:40h-19:35h</div>
+                <div class="m06v2" onclick="window.open('https://ca.wikipedia.org/wiki/Seguretat_inform%C3%A0tica', '_blank')"></div>
+                <div class="m08v2" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')" onclick="window.open('', '_blank')"></div>
+                <div class="m12" onclick="window.open('https://ca.wiktionary.org/wiki/tutoria', '_blank')"></div>
+                <div class="m10" onclick="window.open('https://www.kapitalinteligente.es/que-es-fol/', '_blank')"></div>
+                <div class="m08v2" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')"></div>
+                <!---->
+                <div class="hores">19:35h-20:30h</div>
+                <div class="void">lliure</div>
+                <div class="m11v2" onclick="window.open('https://en.wikipedia.org/wiki/English_language', '_blank')"></div>
+                <div class="void">lliure</div>
+                <!---->
+                <div class="hores">20:30h-21:25h</div>
+                <div class="void">lliure</div>
+                <div class="void">lliure</div>
+                <div class="m08v2" onclick="window.open('https://es.wikipedia.org/wiki/Aplicación_web', '_blank')"></div>
+                <div class="void">lliure</div>
+            </div>
+        </div>
+    </body>
+</html>

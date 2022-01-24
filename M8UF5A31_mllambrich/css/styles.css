@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+/* ----------------------------------< PÀGINA PRINCIPAL >----------------------------------- */
+/* -- HEADER -- */
+header h1 {
+  font-size: 36px;
+}
+h1 {
+  text-align: center;
+}
+/* NAVIGATION BAR */
+nav {
+  height: 50px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.nav > li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  margin: -3px;
+  border: 1px solid black;
+}
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+}
+/* RESPONSIVE NAVIGATION BAR ? ----------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+  nav {
+    height: fit-content;
+  }
+  .nav li {
+    display: flex;
+    margin: auto;
+  }
+}
+#header-img {
+  width: 100%;
+}
+/* -- BODY CONTENT CONTAINER -- */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titol-img {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: cadetblue;
+  margin: 45px auto;
+}
+/* -- RESPONSIVE ROW TO COLUMN IMAGES -- */
+@media only screen and (max-width: 600px) {
+  .img-txt {
+    display: block;
+    width: 400px;
+  }
+  #content-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}
+/* -- ROW IMAGES --*/
+#content-img {
+  margin-bottom: 25px;
+}
+/* THREE ROW IMAGES CONTAINER*/
+.img-txt {
+  display: inline-block;
+  width: 500px;
+  margin: 15px 20px;
+}
+.img-txt a:hover {
+  opacity: 0.3;
+}
+/* IMG SIZES*/
+.index-img {
+  width: 100%;
+}
+/* TXT UNDER IMG */
+.subtitle-img {
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+}
+/* PARAGRAF + BUTTON */
+div.content > p {
+  text-align: center;
+  margin-bottom: 5px;
+  width: 40%;
+}
+div.content span {
+  font-weight: bold;
+}
+button {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 15px;
+}
+button:hover {
+  opacity: 0.3;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+/* -- FOOTER -- */
+footer > ul {
+  text-align: center;
+}
+footer li {
+  display: inline-block;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(146, 146, 146);
+  padding: 10px 40px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+hr {
+  width: 90%;
+  color: rgb(192, 192, 192);
+}
+/* ----------------------------------< LLOCS PARADISÍACS >----------------------------------- */
+/* GRID POSITION */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* -- GRID-IMG SIZES -- */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(4, 200px);
+}
+/* CELL SPANS*/
+.span-2 {
+  grid-column: span 2;
+}
+.span-row-2 {
+  grid-row: span 2;
+  background-image: url(../img/paradis-6.jpg);
+}
+/* GRID BACKGROUND IMAGES PROPERTIES */
+.img-grid {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* -- RESPONSIVE GRID -- */
+@media only screen and (max-width: 600px) {
+  #grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(8, 200px);
+  }
+}
+/* -- GRID BACKGROUND IMAGES -- */
+#img-paradis-1 {
+  background-image: url(../img/paradis-1.png);
+}
+#img-paradis-3 {
+  background-position: bottom;
+  background-image: url(../img/paradis-4.jpg);
+}
+#img-paradis-2 {
+  background-image: url(../img/paradis-12.jpg);
+}
+#img-paradis-4 {
+  background-image: url(../img/paradis-13.jpg);
+}
+#img-paradis-7 {
+  background-image: url(../img/paradis-7.jfif);
+}
+#img-paradis-8 {
+  background-image: url(../img/paradis-8.jpg);
+  background-position: bottom right;
+}
+#img-paradis-9 {
+  background-image: url(../img/paradis-14.jpg);
+}
+#img-paradis-10 {
+  background-image: url(../img/paradis-10.png);
+}
+#img-paradis-11 {
+  background-image: url(../img/paradis-11.jpg);
+}
+#img-paradis-12 {
+  background-image: url(../img/paradis-15.jpg);
+}
+#img-paradis-13 {
+  background-image: url(../img/paradis-17.jpg);
+  background-position: left;
+}
+/* --------------------------------------< QUI SOM >---------------------------------------- */
+/* -- GRID CV SIZES -- */
+#grid-cv {
+  display: grid;
+  grid-template-columns: 350px 450px;
+  grid-template-rows: 300px repeat(2, 250px);
+  column-gap: 15px;
+  row-gap: 15px;
+  background-color: rgb(49, 49, 49);
+  padding: 20px;
+  border-radius: 15px;
+}
+/* GRID CELLS */
+#grid-cv div {
+  border-radius: 15px;
+  background-color: white;
+}
+#cv-img {
+  background-image: url(../img/cute-img.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* SECTION CV TITLES */
+.titol-cv {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: cadetblue;
+}
+h1.titol-cv span {
+  display: block;
+  justify-content: center;
+}
+#cell-dades {
+  grid-row: span 2;
+}
+.llista:not(.nonetype) {
+  margin: 15px 0;
+  font-weight: bold;
+}
+.nonetype {
+  list-style-type: none;
+}
+/* ------------------------------------< RESERVA JA >-------------------------------------- */
+#form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 400px;
+  background-color: rgb(49, 49, 49);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+label {
+  color: cadetblue;
+  margin: 10px;
+}
+#btn {
+  background-color: cadetblue;
+  border: none;
+  padding: 10px 20px;
+  opacity: 1;
+  width: 95%;
+}
+input,
+textarea {
+  display: block;
+  background: white;
+  opacity: 0.5;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+}

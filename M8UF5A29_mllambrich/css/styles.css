@@ -1,0 +1,108 @@
+/* CSS utilitzat en el primer horari fet amb taules*/
+tr{
+    text-align: center;
+}
+img{
+    width: 150px;
+}
+/* CSS utilitzant GRID*/
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 120px repeat(5, 200px);
+    grid-template-rows: 50px repeat(3, 100px) 30px repeat(3, 100px);
+    background-color: #e8e7ee;
+    border-radius: 25px;
+}
+.grid > div{
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.setmana{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFADAD;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #FFADAD;
+}
+.m06{
+    grid-row: span 2;
+    background-color: #FDFFB6;
+    background-image: url(../img/M06.png);
+}
+.m06v2{
+    grid-row: span 3;
+    background-color: #FDFFB6;
+    background-image: url(../img/M06.png);
+}
+.m07{
+    grid-row: span 3;
+    background-color: #FFD6A5;
+    background-image: url(../img/m07v2.png);
+}
+.m08{
+    grid-row: span 2;
+    background-color: #BDB2FF;
+    background-image: url(../img/M08v2.png);
+}
+.m08v2{
+    background-color: #BDB2FF;
+    background-image: url(../img/M08v2.png);
+}
+.m10{
+    grid-row: span 2;
+    background-color: #A0C4FF;
+    background-image: url(../img/fol.webp);
+}
+.m11{
+    grid-row: span 2;
+    background-color: #9BF6FF;
+    background-image: url(../img/M11v2.png);
+}
+.m11v2{
+    background-color: #9BF6FF;
+    background-image: url(../img/M11v2.png);
+}
+.m12{
+    background-color: #CAFFBF;
+    background-image: url(../img/tutv2.png);
+}
+.pati{
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFADAD;
+    text-transform: uppercase;
+}
+.void{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: rgba(128, 128, 128, 0.336);
+}
